@@ -314,18 +314,22 @@ a:active {
     text-align: var(--section-footer-align);
 }
 
-.nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+.footer {
+    padding: var(--footer-padding);
 }
 
 .navbar-menu {
     float: right;
 }
 
-.nav .nav-item {
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: cente;
+}
+
+.nav.nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -334,15 +338,11 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav .nav-link {
+.nav.nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
-.bav .nav-link:hover {
+.nav.nav-link:hover {
     color: var(--nav-item-link-hover);
-}
-
-.footer {
-    padding: var(--footer-padding);
 }
