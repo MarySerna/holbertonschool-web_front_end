@@ -318,15 +318,15 @@ a:active {
     padding: var(--footer-padding);
 }
 
-.navbar-menu {
-    float: right;
-}
-
 .nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-align: center;
+}
+
+.navbar-menu {
+    float: right;
 }
 
 .nav .nav-item {
@@ -341,4 +341,8 @@ a:active {
 .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+}
+
+.bav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
