@@ -239,6 +239,7 @@ template {
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
+*,
 *:before,
 *:after {
     box-sizing: border-box;
@@ -406,7 +407,8 @@ a:active {
     width: 100%;
 }
 
-.nav .nav-link:hover {
+.nav .nav-link:hover,
+.nav .nav-link:visited {
     color: var(--nav-item-link-hover);
 }
 
