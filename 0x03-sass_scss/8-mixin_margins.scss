@@ -1,0 +1,14 @@
+/* assign margins using mixin */
+
+@mixin margin($size) {
+    margin-left: $size;
+    margin-right: $size;
+}
+
+body {
+    @include margin(10px);
+}
+
+div {
+    @include margin(15px);
+}
