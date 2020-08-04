@@ -197,7 +197,7 @@ template {
 
 
 /* Variables
-   ============================= */
+     ============================= */
 
 :root {
     --color-primary: #d73953;
@@ -270,7 +270,7 @@ template {
 
 
 /* Base
-      ============================= */
+        ============================= */
 
 *,
 *:before,
@@ -337,7 +337,7 @@ a:active {
 
 
 /* Helpers
-      ============================= */
+        ============================= */
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
@@ -353,7 +353,7 @@ a:active {
 
 
 /* Layout
-      ============================= */
+        ============================= */
 
 .container {
     width: 960px;
@@ -363,7 +363,7 @@ a:active {
 
 
 /* Grid
-      ============================= */
+        ============================= */
 
 .row {
     display: flex;
@@ -389,7 +389,7 @@ ul.row {
 
 
 /* Navbar
-      ============================= */
+        ============================= */
 
 .navbar-menu {
     float: right;
@@ -440,7 +440,7 @@ ul.row {
 
 
 /* Header
-      ============================= */
+        ============================= */
 
 .header {
     padding: var(--header-padding);
@@ -462,7 +462,7 @@ ul.row {
 
 
 /* Footer
-      ============================= */
+        ============================= */
 
 .footer {
     --nav-item-font-weight: normal;
@@ -497,7 +497,7 @@ ul.row {
 
 
 /* Section (all styles)
-      ============================= */
+        ============================= */
 
 .section {
     padding: var(--section-padding);
@@ -535,7 +535,7 @@ ul.row {
 
 
 /* Section theming
-      ============================= */
+        ============================= */
 
 [data-section-theme="dark"] {
     --button-color: var(--color-white);
@@ -546,7 +546,7 @@ ul.row {
 
 
 /* Section HERO
-      ============================= */
+        ============================= */
 
 .section-hero {
     background-position: 75% 0;
@@ -564,14 +564,14 @@ ul.row {
 }
 
 
-/*** 4. CARD ***/
-
-
 /* Section Latest news ============================= */
 
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
+
+
+/*** 4. CARD ***/
 
 
 /* Section SERVICES ============================= */
@@ -582,7 +582,7 @@ ul.row {
 
 
 /* Card (all styles)
-      ============================= */
+        ============================= */
 
 .card-category {
     color: var(--color-primary);
@@ -590,7 +590,7 @@ ul.row {
 
 
 /* Card WORK
-      ============================= */
+        ============================= */
 
 .card-work .card-outer {
     position: relative;
@@ -656,7 +656,7 @@ ul.row {
 
 
 /* Card SERVICES
-      ============================= */
+        ============================= */
 
 .card-services .card-title {
     margin: 0;
@@ -678,7 +678,7 @@ ul.row {
 
 
 /* Card TESTIMONIAL
-      ============================= */
+        ============================= */
 
 .card-testimonial {
     text-align: center;
