@@ -375,7 +375,7 @@ ul.row {
     list-style: none;
 }
 
-[class*="col-"] {
+[class * = "col-"] {
     padding: 0.5rem;
 }
 
@@ -488,7 +488,7 @@ ul.row {
     display: block;
 }
 
-.social-link>svg {
+.social-link > svg {
     fill: var(--text-color);
 }
 
