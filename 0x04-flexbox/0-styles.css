@@ -375,7 +375,7 @@ ul.row {
     list-style: none;
 }
 
-[class *= "col-"] {
+[class*="col-"] {
     padding: 0.5rem;
 }
 
@@ -488,7 +488,7 @@ ul.row {
     display: block;
 }
 
-.social-link > svg {
+.social-link>svg {
     fill: var(--text-color);
 }
 
@@ -610,7 +610,7 @@ ul.row {
 }
 
 .card-work:hover .card-inner {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-work .card-title {
