@@ -238,7 +238,11 @@ template {
     --section-footer-align: center;
     /** HEADER **/
     --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
+    /* --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0; */
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
     /** NAVBAR **/
@@ -387,16 +391,17 @@ ul.row {
 /* Navbar
       ============================= */
 
+
+/* .navbar-menu {
+    float: right;
+  }*/
+
 .nav {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-}
-
-.nav .nav-item+.nav-item {
-    margin: var(--nav-item-margin);
+    display: flex;
 }
 
 .nav .nav-item {
@@ -404,6 +409,7 @@ ul.row {
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+    /*display: var(--nav-item-display);*/
 }
 
 .nav .nav-link {
@@ -433,6 +439,10 @@ ul.row {
     width: 100%;
 }
 
+.nav .nav-item+.nav-item {
+    margin: var(--nav-item-margin);
+}
+
 
 /* Header
       ============================= */
@@ -443,6 +453,18 @@ ul.row {
     z-index: 3;
     background: transparent !important;
 }
+
+
+/* .header-logo {
+    position: var(--header-logo-position);
+  }
+  
+  .header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+  }*/
 
 .header-container {
     display: flex;
@@ -558,27 +580,30 @@ ul.row {
 }
 
 
-/*** 4. CARD ***/
-
-
-/* Section Latest news ============================= */
+/* Section Latest news 
+      ============================= */
 
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
 
 
-/* Section SERVICES ============================= */
+/*** 4. CARD ***/
+
+
+/* Section SERVICES 
+    ============================= */
 
 .section-services .row {
     flex-wrap: wrap;
 }
 
 
-/* Section ABOUT US ============================= */
+/* Section ABOUT US
+    ============================= */
 
-.section-about-us [class^='col-'] {
-    align-self: center;
+.section-about-us [class*="col-"] {
+    align-items: center;
 }
 
 
