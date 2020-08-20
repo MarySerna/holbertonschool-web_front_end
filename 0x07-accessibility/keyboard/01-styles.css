@@ -866,6 +866,10 @@ ul.row {
     content: '';
 }
 
+.card-work .card-title a {
+    opacity: 0;
+}
+
 .card-work .card-title a:focus {
     opacity: 1;
     height: 100%;
@@ -888,7 +892,6 @@ ul.row {
     }
     .card-work .card-title a {
         display: block;
-        opacity: 0;
         padding: 2rem 1rem 0 1rem;
     }
     .card-work:hover .card-inner {
