@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 0</title>
+</head>
+
+<body>
+    <div>
+        <h1>Login to the Website</h1>
+        <input id="firstname" />
+        <input id="email" />
+        <button type="button" class="btn1" onclick="setCookies()">
+        Log me in
+      </button>
+    </div>
+    <div>
+        <h1>Cookies</h1>
+        <button class="btn2" onclick="showCookies()">Show the cookies</button>
+    </div>
+    <script>
+        const setCookies = () => {
+            document.cookie = `firstname=${
+          document.getElementById("firstname").value
+        }`;
+            document.cookie = `email=${document.getElementById("email").value}`;
+        };
+        const showCookies = () => {
+            let cooks = [];
+            let keycooks = document.cookie.split(";");
+            for (let i in keycooks) {
+                cooks.push(keycooks[i].split("=")[1]);
+            }
+            let p = document.createElement("p");
+            p.innerText = `Cookies: ${cooks[0]}, ${cooks[1]}`;
+            document.body.appendChild(p);
+        };
+    </script>
+</body>
+
+</html>
